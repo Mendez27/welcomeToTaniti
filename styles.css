@@ -1,0 +1,337 @@
+body {
+    font-family: 'Aloha Paradise', cursive;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+h2 {
+    font-size: 2.5rem; 
+    color: #93E9BE; 
+    text-shadow: 
+        -1px -1px 0 navy, 
+        1px -1px 0 navy,   
+        -1px 1px 0 navy,   
+        1px 1px 0 navy;    
+}
+
+#home, .banner, .banner-image {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#home {
+    background-color: #333; 
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 25vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; 
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+.book-now-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-family: 'Aloha Paradise', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: slide-in 3s forwards ease-in-out;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #93E9BE;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.navigation .brand {
+    margin-right: auto; 
+    padding-left: 1rem; 
+}
+
+.navigation .brand a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #005f73;
+}
+
+
+.navigation ul li {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.navigation ul li a {
+    color: #005f73;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.navigation ul li a:hover, 
+.navigation ul li a:focus, 
+.navigation ul li a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+
+#about-faq {
+    padding: 2rem 0;
+    color: white;
+    background-image: url('island_coastline.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+#eat-section {
+    padding: 2rem 0;
+    color: white;
+    background-image: url('Grocery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#eat-section h2 {
+    font-size: 2.5rem;
+    color: #93E9BE; 
+}
+#eat-section p {
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#rest-section {
+    padding: 2rem 0;
+    color: white;
+    font-size: 48pt;
+    background-image: url('Hotel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#rest-section h2 {
+    font-size: 2.5rem; 
+    color: #93E9BE; 
+}
+#rest-section p {
+    font-size: 1.5rem;
+    line-height: 2.5rem; 
+}
+#entertain-section {
+    padding: 2rem 0;
+    color: white;
+    background-image: url('zipline.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#entertain-section h2 {
+    font-size: 2.5rem; 
+    color: #93E9BE;
+}
+#entertain-section p {
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#explore-section {
+    padding: 2rem 0;
+    color: white;
+    background-image: url('cruise.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+#explore-section h1 {
+    font-size: 3rem;
+    color: #93E9BE; 
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 navy,  
+        1px -1px 0 navy,   
+        -1px 1px 0 navy,   
+        1px 1px 0 navy;    
+}
+#explore-section h2 {
+    font-size: 2.5rem;
+    color: #93E9BE; 
+}
+#explore-section p {
+    font-size: 1.5rem; 
+    line-height: 2.5rem; 
+}
+.about, .faq {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.about h2, .faq h2 {
+    color: #93E9BE;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.about p, .faq ul {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq ul li {
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #93E9BE;
+    color: white;
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: cover;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer-links a {
+    flex: 1; 
+    text-align: center; 
+    color: #005f73;
+    text-decoration: none;
+}
+
+.footer-links a:nth-child(1) {
+    text-align: left; 
+}
+
+.footer-links a:nth-child(2) {
+    text-align: center;
+}
+
+.footer-links a:nth-child(3) {
+    text-align: right; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .welcome-text {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .banner {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 769px) {
+    .banner {
+        height: 50vh;
+    }
+}
+
+
+@font-face {
+    font-family: 'Aloha Paradise';
+    src: url('path-to-your-font/AlohaParadise.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-150%) translateY(-50%);
+    }
+    to {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
